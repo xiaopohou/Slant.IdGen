@@ -1,8 +1,7 @@
-﻿using IdGen;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace IdGenTests
+namespace IdGen.Tests
 {
     [TestClass]
     public class MaskConfigTests

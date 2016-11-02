@@ -1,5 +1,5 @@
-# ![Logo](https://raw.githubusercontent.com/RobThree/IdGen/master/IdGenDocumentation/icons/Help.png) IdGen
-Twitter Snowflake-alike ID generator for .Net. Available as [Nuget package](https://www.nuget.org/packages/IdGen)
+# ![Logo](https://raw.githubusercontent.com/slantstack/Slant.IdGen/master/docs/img/logo.png) Slant IdGen
+Twitter Snowflake-alike ID generator for .Net. Available as [Nuget package](https://www.nuget.org/packages/Slant.IdGen)
 
 ## Why
 
@@ -15,7 +15,7 @@ IdGen generates, like Snowflake, 64 bit Id's. The [Sign Bit](https://en.wikipedi
 
 An Id generated with a **Default** `MaskConfig` is structured as follows: 
 
-![Id structure](https://raw.githubusercontent.com/RobThree/IdGen/master/IdGenDocumentation/Media/structure.png)
+![Id structure](https://raw.githubusercontent.com/slantstack/Slant.IdGen/master/docs/img/structure.png)
 
 However, using the `MaskConfig` class you can tune the structure of the created Id's to your own needs; you can use 45 bits for the timestamp (≈1114 years), 2 bits for the generator-id and 16 bits for the sequence to allow, for example, generating 65536 id's per millisecond per generator distributed over 4 hosts/threads giving you a total of 262144 id's per millisecond. As long as all 3 parts (timestamp, generator and sequence) add up to 63 bits you're good to go!
 
@@ -29,12 +29,12 @@ The **sequence**-part is simply a value that is incremented each time a new Id i
 
 We recommend you use NTP to keep your system clock accurate. IdGen protects from non-monotonic clocks, i.e. clocks that run backwards. The [`DefaultTimeSource`](IdGen/DefaultTimeSource.cs) relies on a 64bit monotonic, increasing only, system counter. However, we still recommend you use NTP to keep your system clock accurate; this will prevent duplicate Id's between system restarts for example.
 
-The [`DefaultTimeSource`](IdGen/DefaultTimeSource.cs) relies on a [`Stopwatch`](https://msdn.microsoft.com/en-us/library/system.diagnostics.stopwatch.aspx) for calculating the 'ticks' but you can implement your own time source by simply implementing the [`ITimeSource`](IdGen/ITimeSource.cs) interface.
+The [`DefaultTimeSource`](src/IdGen/DefaultTimeSource.cs) relies on a [`Stopwatch`](https://msdn.microsoft.com/en-us/library/system.diagnostics.stopwatch.aspx) for calculating the 'ticks' but you can implement your own time source by simply implementing the [`ITimeSource`](IdGen/ITimeSource.cs) interface.
 
 
 ## Getting started
 
-Install the [Nuget package](https://www.nuget.org/packages/IdGen) and write the following code:
+Install the [Nuget package](https://www.nuget.org/packages/Slant.IdGen) and write the following code:
 
 ```c#
 using IdGen;

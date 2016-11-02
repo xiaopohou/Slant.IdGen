@@ -1,14 +1,11 @@
-﻿using IdGen;
-using System;
+﻿using System;
 using System.Threading;
 
-namespace IdGenTests
+namespace IdGen.Tests
 {
     public class MockTimeSource : ITimeSource
     {
         private long _current;
-
-        private TimeSpan _tickduration;
 
         public MockTimeSource()
             : this(0) { }
@@ -22,18 +19,12 @@ namespace IdGenTests
         public MockTimeSource(long current, TimeSpan tickDuration)
         {
             _current = current;
-            _tickduration = tickDuration;
+            TickDuration = tickDuration;
         }
 
-        public DateTimeOffset Epoch
-        {
-            get { return DateTimeOffset.MinValue; }
-        }
+        public DateTimeOffset Epoch => DateTimeOffset.MinValue;
 
-        public TimeSpan TickDuration
-        {
-            get { return _tickduration; }
-        }
+        public TimeSpan TickDuration { get; }
 
         public long GetTicks()
         {

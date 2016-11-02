@@ -1,10 +1,9 @@
-﻿using IdGen;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections;
 using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace IdGenTests
+namespace IdGen.Tests
 {
     [TestClass]
     public class IdGenTests
