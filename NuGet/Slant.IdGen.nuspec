@@ -7,7 +7,7 @@
     <authors>Slant Development Team, RobIII</authors>
     <owners>Jonny Novikov</owners>
     <projectUrl>https://github.com/slantstack/Slant.IdGen</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/slantstack/Slant/master/src/logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/slantstack/Slant.IdGen/master/docs/img/slant.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/slantstack/Slant.IdGen/master/LICENSE</licenseUrl>
     <description>Twitter Snowflake-alike ID generator for .Net</description>
@@ -24,8 +24,8 @@
     <tags>entity scalable unique id generator distributed</tags>
   </metadata>
   <files>
-    <file src="LICENSE" />
-    <file src="..\src\IdGen\bin\Release\IdGen.dll" target="lib\net45" />
-    <file src="..\src\IdGen\bin\Release\IdGen.XML" target="lib\net45" />
+    <file src="..\LICENSE" />
+    <file src="..\src\IdGen\bin\Release\Slant.IdGen.dll" target="lib\net45" />
+    <file src="..\src\IdGen\bin\Release\Slant.IdGen.XML" target="lib\net45" />
   </files>
 </package>

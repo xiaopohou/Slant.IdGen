@@ -1,4 +1,9 @@
 # ![Logo](https://raw.githubusercontent.com/slantstack/Slant.IdGen/master/docs/img/logo.png) Slant IdGen
+
+[![Join the chat at https://gitter.im/slantstack/Slant](https://badges.gitter.im/slantdotnet/Slant.svg)](https://gitter.im/slantdotnet/Slant?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/slantstack/slant.idgen?svg=true)] <a href="https://www.nuget.org/packages/Slant.IdGen/"><img src="http://img.shields.io/nuget/v/Slant.IdGen.svg?style=flat-square" alt="NuGet version" height="18"></a> <a href="https://www.nuget.org/packages/IdGen/"><img src="http://img.shields.io/nuget/dt/IdGen.svg?style=flat-square" alt="NuGet downloads" height="18"></a>
+[![NuGet version (Slant.IdGen)](https://img.shields.io/nuget/v/Slant.IdGen.svg?style=flat)](https://www.nuget.org/packages/Slant.IdGen/)
+
 Twitter Snowflake-alike ID generator for .Net. Available as [Nuget package](https://www.nuget.org/packages/Slant.IdGen)
 
 ## Why
@@ -159,7 +164,5 @@ You can get the IdGenerator from the config using the following code:
 `var generator = IdGenerator.GetFromConfig("foo");`
 
 <hr>
-
-[![Build status](https://ci.appveyor.com/api/projects/status/24wqqq91u0arkf5t)](https://ci.appveyor.com/project/RobIII/idgen) <a href="https://www.nuget.org/packages/IdGen/"><img src="http://img.shields.io/nuget/v/IdGen.svg?style=flat-square" alt="NuGet version" height="18"></a> <a href="https://www.nuget.org/packages/IdGen/"><img src="http://img.shields.io/nuget/dt/IdGen.svg?style=flat-square" alt="NuGet downloads" height="18"></a>
 
 Icon made by [Freepik](http://www.flaticon.com/authors/freepik) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/).
